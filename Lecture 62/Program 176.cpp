@@ -19,7 +19,6 @@ public:
 
 node *buildTree(node *root)
 {
-
     cout << "Enter the data: " << endl;
     int data;
     cin >> data;
@@ -157,26 +156,26 @@ int main()
     node *root = NULL;
 
     buildFromLevelOrder(root);
-    levelOrderTraversal(root);
+    // levelOrderTraversal(root);
     // 1 3 5 7 11 17 -1 -1 -1 -1 -1 -1 -1
 
-    /*
-    creating a Tree
+    // creating a Tree
     root = buildTree(root);
-    1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
-    level order
-    cout << "Printing the level order tracersal output " << endl;
+    // 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
+    // level order
+    cout << "Printing the level order traversal output " << endl;
     levelOrderTraversal(root);
 
     cout << "inorder traversal is:  ";
     inorder(root);
 
-    cout << endl << "preorder traversal is:  ";
+    cout << endl
+         << "preorder traversal is:  ";
     preorder(root);
 
-    cout << endl << "postorder traversal is:  ";
+    cout << endl
+         << "postorder traversal is:  ";
     postorder(root);
-    */
 
     return 0;
 }
